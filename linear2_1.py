@@ -23,7 +23,7 @@ x1, x2 = solution
 print(f"x1 = {x1 :.6f}")
 print(f"x2 = {x2 :.6f}")
 
-# 모든 방정식을 정확히 관족하는지 확인
+# 모든 방정식을 정확히 만족하는지 확인
 print("A @ solution =", A @ solution)
 print("b =", b)
 
