@@ -37,7 +37,7 @@ else:
     # X = A^(-1)b
     X = A_inverse @ b
     print("\n선형시스템의 해")
-    print (X)
+    print(X)
 
     x, y, z = X.flatten()
     print(f"\nx = {x:.0f}")
@@ -46,4 +46,4 @@ else:
 
     # 검산
     print("\n검산 결과 A @ X")
-    print (A @ X)
+    print(A @ X)

@@ -13,7 +13,7 @@ A = np.array([
 ])
 
 print("벡터 행렬 A")
-print (A)
+print(A)
 
 # 행렬식 계산
 det_A = np.linalg.det(A)

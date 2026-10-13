@@ -18,10 +18,10 @@ AI = np.hstack((A, I))
 def show_matrix(operation):
     """행 연산 과정 출력"""
     print(f"\n{operation}")
-    print (AI)
+    print(AI)
 
 print("초기 첨가행렬 [A | I]")
-print (AI)
+print(AI)
 
 # 1단계: 첫 번째 열에서 1행 아래의 원소를 0으로 만든다.
 AI[1] = (-2) * AI[0] + AI[1]
@@ -53,10 +53,10 @@ show_matrix("R1 <- R1 - 2R2")
 A_inverse = AI[:, 3:]
 
 print("\n최종 첨가행렬 [I | A^(-1)]")
-print (AI)
+print(AI)
 
 print("\nA의 역행렬")
-print (A_inverse)
+print(A_inverse)
 
 # 역행렬 검산
 print("\n검산: A x A^(-1)")

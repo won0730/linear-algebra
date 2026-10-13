@@ -4,9 +4,9 @@ np.set_printoptions(suppress=True, precision=2)
 # 계수행렬 A
 A = np.array([
     [1, -1, 1],
-    [1, 1,-2],
+    [1, 1, -2],
     [1, 2, 1]
-], dtype=float )
+], dtype=float)
 
 # 상수벡터 b
 b = np.array([0, 1, 6], dtype=float)
@@ -40,16 +40,16 @@ else:
         print(f"\nA{i + 1}: {i + 1}번째 열을 b로 교체")
         print(Ai)
         print(f"D{i + 1} = det(A{i + 1}) = {Di}")
-        print (
+        print(
             f"x{i + 1} = D{i + 1}/D "
             f"= {Di}/{D} = {xi}"
         )
 
     solution = np.array(solution)
 
-    print("\n최종 해 ")
+    print("\n최종 해")
     for i, value in enumerate(solution, start=1):
-        print (f"x{i} = {value}")
+        print(f"x{i} = {value}")
 
     # 검산
     print("\n검산 결과 A @ x")

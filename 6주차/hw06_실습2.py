@@ -2,7 +2,7 @@ import numpy as np
 np.set_printoptions(suppress=True, precision=2)
 
 # 행렬 A
-A = np.array( [
+A = np.array([
     [1, -3, 4],
     [2, -5, 7],
     [0, -1, 1]
@@ -20,7 +20,7 @@ def show_matrix(title):
 
     for row in AI:
         left = " ".join(f"{value:6.1f}" for value in row[:3])
-        right = " ".join(f"{value:6.1f}" for value in row [3:])
+        right = " ".join(f"{value:6.1f}" for value in row[3:])
         print(f"[{left} | {right}]")
 
 # 초기 첨가행렬

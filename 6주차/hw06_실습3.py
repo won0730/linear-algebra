@@ -17,7 +17,7 @@ def get_minor(matrix, row, col):
 
 # 여인수행렬 계산
 def cofactor_matrix(matrix):
-    n = matrix.shape [0]
+    n = matrix.shape[0]
     C = np.zeros((n, n))
     for i in range(n):
         for j in range(n):
@@ -42,16 +42,16 @@ else:
     # 부동소수점 오차 정리
     C = np.round(C, 10)
     adj_A = np.round(adj_A, 10)
-    inverse_A = np.round( inverse_A, 10)
+    inverse_A = np.round(inverse_A, 10)
 
     print("행렬 A")
     print(A)
-    print("\n행혈식 det(A)")
+    print("\n행렬식 det(A)")
     print(det_A)
     print("\n여인수행렬 C")
-    print (C)
+    print(C)
     print("\n수반행렬 adj(A)")
-    print (adj_A)
+    print(adj_A)
     print("\n역행렬 A^(-1)")
     print(inverse_A)
     print("\n검산 A x A^(-1)")

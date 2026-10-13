@@ -1,9 +1,10 @@
 import math
+
 # 2×2 행렬식 계산 함수
 def determinant_2x2(matrix):
     return (
-    matrix[0][0] * matrix[1][1]
-    - matrix[0][1] * matrix[1][0]
+        matrix[0][0] * matrix[1][1]
+        - matrix[0][1] * matrix[1][0]
     )
 
 # 각도를 라디안으로 변환
@@ -59,7 +60,7 @@ else:
     print(f"T1 = D1 / D = {D1:.6f} / {D:.6f}")
     print(f"T1 = {T1:.4f}")
     print(f"\nT2 = D2 / D = {D2:.6f} / {D:.6f}")
-    print (f"T2 = {T2:.4f}")
+    print(f"T2 = {T2:.4f}")
 
     # 검산
     equation1 = (
