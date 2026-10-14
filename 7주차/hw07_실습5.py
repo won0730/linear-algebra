@@ -54,7 +54,7 @@ for k in range(n - 1):
 print_matrix("최종 하삼각행렬 L", L)
 print_matrix("최종 상삼각행렬 U", U)
 
-# 행렬 골 LU 계산
+# 행렬 곱 LU 계산
 LU = [
     [
         sum(L[i][k] * U[k][j] for k in range(n))

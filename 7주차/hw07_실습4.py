@@ -8,6 +8,7 @@ def print_matrix(name, M):
         print("[" + " ".join(f"{str(v):>5}" for v in row) + "]")
     print()
 
+
 # 주어진 행렬
 A = [
     [1, 2, 1],

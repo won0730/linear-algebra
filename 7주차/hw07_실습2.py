@@ -26,10 +26,10 @@ M = [[Fraction(v) for v in row] for row in M]
 print("1. 초기 첨가행렬")
 print_matrix(M)
 
-# 세 번째 행의 ×1 계수를 0으로 만든다.
+# 세 번째 행의 x1 계수를 0으로 만든다.
 M[2] = [M[2][j] + 4 * M[0][j] for j in range(4)]
 
-print ("2. R3 <- R3 + 4R1")
+print("2. R3 <- R3 + 4R1")
 print_matrix(M)
 
 # 두 번째 행의 피벗을 1로 만든다.
@@ -38,7 +38,7 @@ M[1] = [v / 2 for v in M[1]]
 print("3. R2 <- R2 / 2")
 print_matrix(M)
 
-# 세 번째 행의 ×2 계수를 0으로 만든다.
+# 세 번째 행의 x2 계수를 0으로 만든다.
 M[2] = [M[2][j] + 3 * M[1][j] for j in range(4)]
 
 print("4. R3 <- R3 + 3R2 : 삼각형 형태 완성")

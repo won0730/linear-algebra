@@ -11,7 +11,7 @@ A = np.array([
     [-np.sin(theta), np.cos(theta)]
 ])
 
-# 3. 각 열이 하나의 꼭짓점인 2×4 행렬
+# 3. 각 열이 하나의 꼭짓점인 2x4 행렬
 # P1=(1,1), P2=(1,2), P3=(2,2), P4=(2,1)
 P = np.array([
     [1, 1, 2, 2],
@@ -25,11 +25,11 @@ Q = A @ P
 np.set_printoptions(precision=4, suppress=True)
 
 print("회전행렬 A:")
-print (A)
+print(A)
 
 print("\n각 꼭짓점의 변환 결과:")
 for i in range(P.shape[1]):
-    print (
+    print(
         f"P{i + 1}: ({P[0, i]:.0f}, {P[1, i]:.0f})"
         f" -> ({Q[0, i]:.4f}, {Q[1, i]:.4f})"
     )
